@@ -17,6 +17,7 @@
 		226531CE22E055CD007C036B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226531CD22E055CC007C036B /* Foundation.framework */; };
 		226531D022E055D5007C036B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226531CF22E055D5007C036B /* UIKit.framework */; };
 		226531D222E05601007C036B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226531D122E05601007C036B /* CoreBluetooth.framework */; };
+		2296067822E77A080076B93F /* PostForData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296067722E77A070076B93F /* PostForData.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		226531CD22E055CC007C036B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		226531CF22E055D5007C036B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		226531D122E05601007C036B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2296067722E77A070076B93F /* PostForData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostForData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				226531A622E0559F007C036B /* Assets.xcassets */,
 				226531A822E0559F007C036B /* LaunchScreen.storyboard */,
 				226531AB22E0559F007C036B /* Info.plist */,
+				2296067722E77A070076B93F /* PostForData.swift */,
 			);
 			path = "0iOS-Swift-RESTful";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226531A222E0559F007C036B /* ViewController.swift in Sources */,
+				2296067822E77A080076B93F /* PostForData.swift in Sources */,
 				226531A022E0559F007C036B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +499,7 @@
 				226531C622E055A0007C036B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		226531C722E055A0007C036B /* Build configuration list for PBXNativeTarget "0iOS-Swift-RESTfulTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				226531C922E055A0007C036B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		226531CA22E055A0007C036B /* Build configuration list for PBXNativeTarget "0iOS-Swift-RESTfulUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				226531CC22E055A0007C036B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

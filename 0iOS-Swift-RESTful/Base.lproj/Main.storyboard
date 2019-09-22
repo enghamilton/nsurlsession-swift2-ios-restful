@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,26 +20,44 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-cY-Oh9" userLabel="mainView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="RESTful webservice JSON from PHP MySQL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L8g-jX-Fl0">
+                                        <rect key="frame" x="201" y="201" width="200" height="200"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="L8g-jX-Fl0" secondAttribute="height" multiplier="1:1" id="J6w-Yi-Kd7"/>
+                                            <constraint firstAttribute="width" constant="200" id="mb6-52-rEq"/>
+                                            <constraint firstAttribute="height" constant="200" id="oBs-Bq-bTC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="L8g-jX-Fl0" firstAttribute="centerX" secondItem="qCv-cY-Oh9" secondAttribute="centerX" id="cxN-0A-pgT"/>
+                                    <constraint firstItem="L8g-jX-Fl0" firstAttribute="centerY" secondItem="qCv-cY-Oh9" secondAttribute="centerY" id="inY-WQ-8n9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qCv-cY-Oh9" secondAttribute="trailing" id="6RO-vo-RHm"/>
-                            <constraint firstItem="qCv-cY-Oh9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mbG-a4-CJN"/>
-                            <constraint firstItem="qCv-cY-Oh9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="vgm-fa-zUA"/>
-                            <constraint firstItem="qCv-cY-Oh9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yii-0U-ct9"/>
+                            <constraint firstItem="qCv-cY-Oh9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="07t-DD-aOP"/>
+                            <constraint firstItem="qCv-cY-Oh9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NrL-7q-OQA"/>
+                            <constraint firstItem="qCv-cY-Oh9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Ns9-Tf-DqT"/>
+                            <constraint firstAttribute="trailing" secondItem="qCv-cY-Oh9" secondAttribute="trailing" id="TkN-wW-ilR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainView" destination="qCv-cY-Oh9" id="tFR-HM-wWK"/>
+                        <outlet property="myTextview" destination="L8g-jX-Fl0" id="zFL-ig-tw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="297"/>
+            <point key="canvasLocation" x="181" y="297"/>
         </scene>
     </scenes>
 </document>
